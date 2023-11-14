@@ -1,32 +1,10 @@
 <html>
-<head>
-  <title>Hello</title>
-  <script>
-    var urls = [
-      "https://bit.ly/40BlGX6",
-      "https://bit.ly/3syKBhx",
-      "https://bit.ly/40ANQlc",
-      "https://bit.ly/47sO680",
-      "https://bit.ly/3SG7YAn",
-      "https://bit.ly/3ME6Wkw",
-      "https://bit.ly/3QFHIDu"
-      "https://bit.ly/47drnNr"
-    ];
-    var currentUrlIndex = 0;
-    var jumpCount = 0;
-
-    function jumpToNextUrl() {
-      if (jumpCount < 200) {
-        jumpCount++;
-      } else {
-        jumpCount = 0;
-        currentUrlIndex = (currentUrlIndex + 1) % urls.length;
-      }
-      window.location.href = urls[currentUrlIndex];
-    }
-  </script>
-</head>
-<body onload="jumpToNextUrl()">
-  <h1>Hello</h1>
-</body>
-</html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <script>
+    window.location.replace('https://bit.ly/40BlGX6')
+</script>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
